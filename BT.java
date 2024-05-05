@@ -105,6 +105,7 @@ interface BT {
         public BT remove(int n) {
             // Found the key, replace with the minimum of the right subtree
             if(num == n) {
+                if(right == nil) return left;
                 Node succ = right.min();
                 succ.left = left;
                 return succ;
