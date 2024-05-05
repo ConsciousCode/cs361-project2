@@ -107,6 +107,7 @@ interface BT {
             if(num == n) {
                 if(right == nil) return left;
                 Node succ = right.min();
+                right.remove(succ.num);
                 succ.left = left;
                 return succ;
             }
