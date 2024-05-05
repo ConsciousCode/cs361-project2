@@ -59,7 +59,7 @@ interface BT {
     }
     
     public static class Node implements BT {
-        private int num;
+        public int num;
         private BT left, right;
         
         public Node(int n, BT l, BT r) {
