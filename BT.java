@@ -109,6 +109,7 @@ interface BT {
                 Node succ = right.min();
                 right.remove(succ.num);
                 succ.left = left;
+                succ.right = right;
                 return succ;
             }
             // Otherwise, recurse
